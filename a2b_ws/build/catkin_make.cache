@@ -1,0 +1,2 @@
+assign2b
+-DCATKIN_DEVEL_PREFIX=/home/ubuntu/AuE8230Sp24_Group3/a2b_ws/devel -DCMAKE_INSTALL_PREFIX=/home/ubuntu/AuE8230Sp24_Group3/a2b_ws/install -G Unix Makefiles

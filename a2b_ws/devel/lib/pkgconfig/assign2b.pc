@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/AuE8230Sp24_Group3/a2b_ws/devel
+
+Name: assign2b
+Description: Description of assign2b
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
