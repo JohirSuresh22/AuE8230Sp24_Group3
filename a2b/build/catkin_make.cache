@@ -1,0 +1,2 @@
+loop_gazebo
+-DCATKIN_DEVEL_PREFIX=/home/beetrootsalad/AuE8230Sp24_Group3/a2b/devel -DCMAKE_INSTALL_PREFIX=/home/beetrootsalad/AuE8230Sp24_Group3/a2b/install -G Unix Makefiles
