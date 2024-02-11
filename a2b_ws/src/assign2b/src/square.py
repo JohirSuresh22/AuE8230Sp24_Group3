@@ -3,20 +3,20 @@
 import rospy
 from geometry_msgs.msg import Twist
 from turtlesim.msg import Pose
-from math import pow, atan2, sqrt
-pi = 3.1415926535
+from math import pow, atan2, sqrt, pi
+#pi = 3.1415926535
    
 def move():
     rospy.init_node('turtlebot_controller', anonymous=True)
 
-    velocity_publisher = rospy.Publisher('/turtle1/cmd_vel',Twist, queue_size=10)
+    velocity_publisher = rospy.Publisher('/cmd_vel',Twist, queue_size=10)
 
     vel_msg = Twist()
     
-    distance = rospy.get_param('~d')
-    forwardvel = rospy.get_param('~x')
-    angvel = rospy.get_param('~w')
-
+    distance = 2
+    forwardvel = 0.3
+    angvel = 0.3
+    
     vel_msg.linear.x = forwardvel 
     vel_msg.linear.y = 0
     vel_msg.linear.z = 0
@@ -31,8 +31,6 @@ def move():
             no_of_sides=no_of_sides+1
             current_distance = 0
         
-            #cur_pose.x = pose.x
-            #cur_pose.y = pose.y 
             t0 = rospy.Time.now().to_sec()
         
             while(current_distance < distance):
